@@ -1,0 +1,137 @@
+<!--
+  Archivo: sitio_desde_capturas.html
+  Descripción: Página estática (HTML + CSS + un poco de JS) que reproduce las dos capturas/ secciones que me enviaste.
+  Cómo usar:
+   1) Guarda este archivo como `sitio_desde_capturas.html`.
+   2) Abre el archivo en tu navegador (doble clic) para verlo localmente.
+   3) Si quieres que incorpore imágenes locales en lugar de las URLs públicas, súbelas aquí y actualizaré las rutas.
+-->
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-32">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Acoso Escolar</title>
+  <style>
+    /* Reset básico */
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{font-family:Georgia, 'Times New Roman', Times, serif;line-height:1.6;color:#111;background:#fbfbfb;padding:36px}
+
+    .page{max-width:1100px;margin:0 auto;background:#fff;padding:36px;border-radius:8px;box-shadow:0 6px 20px rgba(20,20,40,0.06)}
+    header{text-align:center;padding-bottom:18px;border-bottom:1px solid #eee}
+    header h1{font-family: 'Times New Roman', Georgia, serif;font-size:28px;color:#222;margin:12px 0}
+
+    .section{display:grid;grid-template-columns:1fr 1fr;gap:32px;padding:40px 0;border-bottom:1px solid #f0f0f0;align-items:center}
+    .section.alt{grid-template-columns:1fr 360px}
+    .section .imgwrap{width:100%;display:flex;justify-content:center}
+    .section img{max-width:100%;height:auto;display:block;border-radius:6px;box-shadow:0 6px 18px rgba(10,10,20,0.06)}
+
+    .lead{font-size:16px;color:#333}
+    .subtitle{font-size:20px;color:#222;margin-bottom:12px}
+
+    /* Tipos list */
+    .types{font-family:Arial, Helvetica, sans-serif;color:#333}
+    .types h3{font-size:18px;margin:10px 0}
+    .types p{font-size:14px;margin:6px 0;color:#444}
+
+    /* Consecuencias - layout invertido */
+    .consequences{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:start;padding:40px 0}
+    .consequences .text ul{margin-left:18px;margin-top:8px}
+    .consequences h3{margin-bottom:8px}
+    .note{font-size:13px;color:#666;margin-top:8px}
+    .img-grande {  
+      width: 600px;
+     height: 450px;
+    }
+    .titulo{
+      size: 70px;
+      
+    }
+    /* Responsive */
+    @media (max-width:900px){
+      .section, .consequences, .section.alt{grid-template-columns:1fr;gap:18px}
+      .consequences{grid-template-columns:1fr}
+      body{padding:18px}
+      .page{padding:18px}
+    }
+
+     
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <font size="90px"><p><b>Acoso Escolar</b></p></font>
+      <p class="note">Información y recursos</p>
+    </header>
+
+    <!-- Sección 1: ¿Qué es el acoso escolar? -->
+    <section class="section">
+      <div class="imgwrap">
+        <img src="https://ecuador.unir.net/wp-content/uploads/sites/8/2025/03/Que-es-el-acoso-escolar-y-como-combatirlo2.jpg" alt="Niña cubriéndose el rostro">
+      </div>
+      <div class="text">
+        <h2 class="subtitle">¿Qué es el acoso escolar?</h2>
+        <p class="lead">El acoso escolar, también conocido como bullying, es una forma de violencia que ocurre entre estudiantes dentro o fuera del entorno educativo. Se caracteriza por agresiones repetidas, ya sean físicas, verbales, psicológicas o digitales, con la intención de causar daño o humillación a otra persona. El acosador suele buscar demostrar poder o control sobre su víctima, mientras que la persona acosada se siente indefensa, aislada y temerosa.</p>
+      </div>
+    </section>
+
+    <!-- Sección 2: Tipos de acoso escolar (imagen a la derecha) -->
+    <section class="section alt">
+      <div class="types">
+        <h2 class="subtitle">Tipos de acoso escolar</h2>
+
+        <h3>Físico</h3>
+        <p>Incluye golpes, empujones, patadas, destrucción o robo de pertenencias y cualquier tipo de agresión corporal. Es la forma más visible de acoso, pero no por ello la más común. Suele generar miedo y lesiones físicas en la víctima.</p>
+
+        <h3>Verbal</h3>
+        <p>Se manifiesta a través de insultos, burlas, amenazas, sobrenombres ofensivos o comentarios crueles sobre la apariencia, origen, religión o discapacidad de la persona. Aunque las palabras parezcan inofensivas, pueden causar un profundo daño emocional.</p>
+
+        <h3>Psicológico</h3>
+        <p>Consiste en manipular o aislar a la víctima, haciéndola sentir sola, inútil o sin valor. Se da cuando un grupo excluye deliberadamente a alguien de actividades o conversaciones, o difunde rumores para dañar su reputación. Este tipo de acoso puede pasar desapercibido, pero sus efectos son devastadores.</p>
+
+        <h3>Cibernético (ciberacoso)</h3>
+        <p>Ocurre en redes sociales, chats, videojuegos o cualquier espacio digital. Incluye la difusión de fotos o videos sin consentimiento, mensajes humillantes, amenazas o suplantación de identidad. El problema del ciberacoso es que trasciende el aula: la víctima puede ser atacada a cualquier hora y en cualquier lugar.</p>
+      </div>
+
+      <div class="imgwrap">
+        <img src="https://www.asociacionrea.org/wp-content/uploads/2019/12/Tipos-de-acoso.png" alt="Infografía tipos de acoso">
+      </div>
+    </section>
+
+    <!-- Sección 3: Consecuencias (segunda captura) -->
+    <section class="consequences">
+      <div class="imgwrap">
+        <img class ="img-grande" src="https://www.conmishijos.com/uploads/educacion/prevenirbullying-1.jpg" alt="Niña tapándose la cara con compañeros detrás">
+      </div>
+
+      <div class="text">
+        <h2 class="subtitle">Consecuencias del acoso</h2>
+        <p>El acoso escolar deja huellas que pueden durar toda la vida, tanto en la víctima como en el agresor y los testigos.</p>
+
+        <h3>Para la víctima:</h3>
+        <ul>
+          <li>Miedo constante a asistir al colegio.</li>
+          <li>Trastornos del sueño, ansiedad y depresión.</li>
+          <li>Disminución del rendimiento académico por falta de concentración o ausentismo.</li>
+          <li>Baja autoestima y sensación de soledad.</li>
+          <li>En casos graves, conductas autodestructivas o pensamientos suicidas.</li>
+        </ul>
+
+        <h3>Para el agresor:</h3>
+        <ul>
+          <li>Desarrolla una falsa idea de poder y dominio, que puede extenderse a su vida adulta.</li>
+          <li>Tiende a repetir patrones de violencia en otros contextos (hogar, trabajo, relaciones).</li>
+          <li>En algunos casos, puede tener problemas legales o disciplinarios si sus acciones son graves.</li>
+        </ul>
+
+        <h3>Para los testigos:</h3>
+        <p>Pueden normalizar la violencia, creyendo que “es algo común” o “solo una broma”. Sienten culpa o miedo de intervenir, lo que refuerza el ciclo del acoso.</p>
+
+      </div>
+    </section>
+  </div>
+</body>
+</html>
